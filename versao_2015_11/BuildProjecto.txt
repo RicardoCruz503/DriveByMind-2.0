@@ -1,0 +1,30 @@
+Para fazer build do projecto deve segur os seguintes passos:
+
+1 - File -> Build Setting
+2 - Na janela Build Settings escolher a plataforma que pretende (android ou pc,mac & linux)
+    Ainda na mesma janela onde diz scenes in build deveram estar 20 scenes (0 a 19). 
+    Para as colocar lá basta ir às pastas do projecto em:
+
+Assets -> Carros2D -> Scenes
+Assets -> Cidade -> Scenes
+Assets -> Helicoptero -> Scenes
+Assets -> Menu-> introducao
+		MainMenu
+		MenuJogar
+			MenuCarros2D
+			MenuCarros3D
+			MenuHelicoptero
+		Opcoes
+			Calibracao
+			EscolhaEstimulo
+			EscolhaFrequencia
+			MatLab
+Igual para menuAndroi
+
+
+Para melhor identificar as Scenes que deverao ser adicionadas: Sao todos os ficheiros que dentro da pasta assets têm o
+simbolo do unity
+
+Depois de adicionadas todas as scenes é apenas necessário clicar em build
+
+Atençao que a primeira vez que é feito Build demora algum tempo

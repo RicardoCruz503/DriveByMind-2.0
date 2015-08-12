@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Road-Cleaner
+  m_Shader: {fileID: 10703, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: fe67316a0e8729c49be1920a58461583, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 4aeccc216aecf9e48b8d5cfaf31dfa74, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeMask
+        second:
+          m_Texture: {fileID: 2800000, guid: fe67316a0e8729c49be1920a58461583, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendText
+        second:
+          m_Texture: {fileID: 2800000, guid: a49da78487cdc3145b053e8a7c51cbe3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 1, y: .5}
+      data:
+        first:
+          name: _Diffuse
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _somerange
+        second: -5
+      data:
+        first:
+          name: _exponent
+        second: 10
+      data:
+        first:
+          name: _range2
+        second: 3.53731322
+      data:
+        first:
+          name: _range1
+        second: .485074639
+      data:
+        first:
+          name: _g
+        second: .350746274
+      data:
+        first:
+          name: _subtract
+        second: 1.04999995
+      data:
+        first:
+          name: _MaskBias
+        second: 2.88461542
+      data:
+        first:
+          name: _Subtraction
+        second: .538461566
+      data:
+        first:
+          name: _range
+        second: 2.28186154
+      data:
+        first:
+          name: _VectorPower
+        second: 1.7307688
+      data:
+        first:
+          name: _Power
+        second: 1.64999998
+      data:
+        first:
+          name: _Strength
+        second: 4.5999999
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Angle
+        second: {r: 8.34000015, g: -3.38000011, b: 0, a: 0}
+      data:
+        first:
+          name: _VectorAngle
+        second: {r: -8.85000038, g: 1.47000003, b: -2.20070004, a: -.00999999978}
