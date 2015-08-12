@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{C3E7180A-3ADB-D1DB-9376-FB2D1E0471A6}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_2;UNITY_5_1;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Animations\AnimViajante.cs" />
+     <Compile Include="Assets\Animations\AnimViajanteSair.cs" />
+     <Compile Include="Assets\CARROS 2D\HERTZ\VerficarFramesActual.cs" />
+     <Compile Include="Assets\CARROS 2D\_PREFABS\CarroBranco\MostrarSons.cs" />
+     <Compile Include="Assets\CARROS 2D\_PREFABS\CarroBranco\Movimento.cs" />
+     <Compile Include="Assets\CARROS 2D\_PREFABS\Cenario\MovEstrada.cs" />
+     <Compile Include="Assets\CARROS 2D\_PREFABS\Meta\metaScript.cs" />
+     <Compile Include="Assets\CARROS 2D\_PREFABS\Obstaculos\Movimentos.cs" />
+     <Compile Include="Assets\CARROS 2D\_PREFABS\Obstaculos\Obstaculos.cs" />
+     <Compile Include="Assets\CARROS 2D\_PREFABS\TouchAndroid.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\AnimacaoMindwave.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\AnimacaoWindows.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\ContasMatematica.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\Estimulos\Arrow.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\Estimulos\Estimulos.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\JogarAnimacao.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\OpcoesAnimacao.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\SairAnimacao.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\TCP Scripts\ClienteTCP.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\TCP Scripts\ServidorTCP.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\TCP Scripts\tcpClient.cs" />
+     <Compile Include="Assets\CARROS 2D\_SCRIPTS\VoltarAnimacao.cs" />
+     <Compile Include="Assets\CARROS 2D\_TOUCHSCRIPTS\BaixoMov.cs" />
+     <Compile Include="Assets\CARROS 2D\_TOUCHSCRIPTS\CimaMov.cs" />
+     <Compile Include="Assets\CIDADE\_IMPORTS\_FORDFOCUS\Scripts\Android.cs" />
+     <Compile Include="Assets\CIDADE\_IMPORTS\_FORDFOCUS\Scripts\Camera.cs" />
+     <Compile Include="Assets\CIDADE\_IMPORTS\_FORDFOCUS\Scripts\CarroMov.cs" />
+     <Compile Include="Assets\CIDADE\_IMPORTS\_FORDFOCUS\Scripts\MenuScripts\MenuScript.cs" />
+     <Compile Include="Assets\CIDADE\_IMPORTS\_FORDFOCUS\Scripts\MovSecundarios.cs" />
+     <Compile Include="Assets\CIDADE\_IMPORTS\_FORDFOCUS\Scripts\SonsScript.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\HelicopterMenu.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\MenuOpcoes\DadosFrequencias.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\MenuOpcoes\ModoVisualAnim.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\MenuOpcoes\TecladoAnim.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\MenuOpcoes\VoltarAnim.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\MenuPrincipal\Scripts\JogarAnim.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\MenuPrincipal\Scripts\OpcoesAnim.cs" />
+     <Compile Include="Assets\CIDADE\_MENUS\MenuPrincipal\Scripts\SairAnim.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\AndroidAndar.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\AndroidVirar.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\AnimacaoCarros.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Bell_MovimentoHelicoptero.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Bell_RodarHelices.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Conexao TCP\TCPServer.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Destinos\DestinoEstimulos.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Destinos\Destinos.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Destinos\DestinosAndroid.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Destinos\DestinosAnim.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Destinos\DestinosTCPAnim.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Estimulos\DireitaEstimulo.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Estimulos\EsquerdaEstimulo.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Estimulos\Estimulo.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\Estimulos\FrenteEstimulo.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\MovimentoHelicoptero.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\NavigationTest.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\RestaurarHeli.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\RodarHelices.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\TamanhoEcra.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\VoltarMenu.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\ciclosHertz.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\detectarcolisoes.cs" />
+     <Compile Include="Assets\CIDADE\_SCRIPTS\frames.cs" />
+     <Compile Include="Assets\ConexaoTCP\TCP_IP_SERVER.cs" />
+     <Compile Include="Assets\HELICOPTERO\IMPORTS\N916MU\Formats\RodarHelic.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\Direita.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\DireitaAndroid.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\Esquerda.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\EsquerdaAndroid.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\Frente.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\FrenteAndroid.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\ApanharMoedas.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\ConexaoTCP\Tcpheli.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\DestinosHelicoptero.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\EscolherAneis.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\EscolherAneisTeclado.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\EscolherMoedas.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\HeliLivre.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\HoverRotation.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\NavMeshDestinos.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\PassarAneis.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\TCPDestinos.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\TCPHeliLivre.cs" />
+     <Compile Include="Assets\HELICOPTERO\Unity3dx Free City01\scripts\MouseLook.cs" />
+     <Compile Include="Assets\MENU\Menu\Introducao\MoedaTrigger.cs" />
+     <Compile Include="Assets\MENU\Menu\Introducao\NavIntro.cs" />
+     <Compile Include="Assets\MENU\Menu\Introducao\NavTaxi.cs" />
+     <Compile Include="Assets\MENU\Menu\MainMenu\CreditosMainMenu.cs" />
+     <Compile Include="Assets\MENU\Menu\MainMenu\JogarOpcao.cs" />
+     <Compile Include="Assets\MENU\Menu\MainMenu\OpcoesMenu.cs" />
+     <Compile Include="Assets\MENU\Menu\MainMenu\SairMainMenu.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\Carros2DJogar.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\Carros3dJogar.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\HeliJogar.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuCarros2D\Mindwave2d.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuCarros2D\Teclado2d.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuCarros2D\Voltar2d.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuCarros3d\gusbamp3d.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuCarros3d\teclado3d.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuCarros3d\voltar3d.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuHelicoptero\Voltarheli.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuHelicoptero\gusbamp2heli.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuHelicoptero\gusbampheli.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuHelicoptero\teclado2heli.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\MenuHelicoptero\tecladoheli.cs" />
+     <Compile Include="Assets\MENU\Menu\MenuJogar\VoltarJogar.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\Calibracao\Calibracao.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\Calibracao\CalibracaoPiscarSetas.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\Calibracao\CalibracaoTCP.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\Calibracao\ComecarCalibracao.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\Calibracao\PiscarGUI.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\Calibracao\VoltarCalibracao.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\EscolhaEstimulo\EstimulosEscolha.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\EscolhaEstimulo\PiscarSetas.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\EscolhaEstimulo\VoltarEstim.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\EscolhaFreq\FreqEscolhe.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\EscolhaFreq\VoltarEscFreq.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\MatLab\MatLab_Calib_Freq.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\MatLab\MatLab_Det_Setas.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\MatLab\MatLab_Env_Comando.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\MatLab\VoltarMatLab.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\SCRIPT\CalibrarMenu.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\SCRIPT\EstimMenu.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\SCRIPT\FreqMenu.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\SCRIPT\SinaisMatlabMenuOpcoes.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\SCRIPT\TesteGUI.cs" />
+     <Compile Include="Assets\MENU\Menu\Opcoes\SCRIPT\VoltarMenuOpcoes.cs" />
+     <Compile Include="Assets\MENU\Menu\Script\AndarCamera.cs" />
+     <Compile Include="Assets\MENU\Menu\Script\Creditos.cs" />
+     <Compile Include="Assets\MENU\Menu\Script\PauseGame.cs" />
+     <Compile Include="Assets\MENU\Menu\Script\Preload.cs" />
+     <Compile Include="Assets\MENU\MenuAndroid\Script\MainMenuAndroid.cs" />
+     <None Include="Assets\CIDADE\_IMPORTS\Carros\Carrinha\archibase.net.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT_DifSpecVC.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\CIDADE\_IMPORTS\Car&amp;People models\Man sitting business N200514\archibase.net.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\CIDADE\_IMPORTS\Car&amp;People models\c4ce7e143698f031c851e8c0942841bb\archibase.net.txt" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT-Skydome.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT_DiffuseVCCubemap.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\Quantum MetaClouds Sample\Documentation.txt" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT_DiffuseVC.shader" />
+     <None Include="Assets\CIDADE\_IMPORTS\Carros\461c0d09b69b6f72cfc0c9165b759899\archibase.net.txt" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\CIDADE\_IMPORTS\Car&amp;People models\Man walking N120814\archibase.net.txt" />
+     <None Include="Assets\CIDADE\TheLoom_Building_1_Free\Shaders\TheLoom_Normal.shader" />
+     <None Include="Assets\CIDADE\_IMPORTS\Car&amp;People models\5bfeed11e99c952d459bc50137e93a87\archibase.net.txt" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\VertexOnly.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT_Road.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT_DiffuseVCEmissive.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT-SkyBoxFog.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\HELICOPTERO\Unity3dx Free City01\Standard Assets\Skyboxes\skybox info.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\Diffuse_VCMod2x.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT-SkyBox.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT_LightingOnly.shader" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Materials\Shaders\QT_DiffuseVCEmissiveCubeMap.shader" />
+     <None Include="Assets\CIDADE\_IMPORTS\Car&amp;People models\5ea87d13283f74084edccf14e1c99205\archibase.net.txt" />
+     <None Include="Assets\CIDADE\Quantum Theory\UCP\Documentation.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\CIDADE\_IMPORTS\Car&amp;People models\Man 1 N230614\archibase.net.txt" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\CIDADE\TheLoom_Building_1_Free\readme.txt" />
+     <None Include="Assets\CIDADE\_IMPORTS\Carros\f7f8de6f0e1b137b229a98a7bcd004b8\archibase.net.txt" />
+     <None Include="Assets\Editor\Doxygen\Resources\BaseDoxyfile.txt" />
+     <None Include="Assets\Editor\Doxygen\ReadMe.txt" />
+     <None Include="Assets\CIDADE\_IMPORTS\Car&amp;People models\fb1a2fd5820296081eedbe0ce95b9c96\archibase.net.txt" />
+     <None Include="Assets\CIDADE\Quantum Theory\Quantum MetaClouds Sample\Shaders\QuantumMetaCloud-SoftAlphaBlend.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{F874A30F-A8BB-F2E6-80AC-7A5905A8EE35}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{5763065F-147E-CC1E-4EAD-9D6E985B3415}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
