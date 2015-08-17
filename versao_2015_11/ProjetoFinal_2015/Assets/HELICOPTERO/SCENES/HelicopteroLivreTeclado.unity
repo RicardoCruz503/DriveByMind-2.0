@@ -6560,7 +6560,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 16
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &1657404730
 MonoBehaviour:
@@ -6573,7 +6573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e18f6eee619c34086fdbd5c8324a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody: {fileID: 0}
+  rigidbody: {fileID: 1657404729}
 --- !u!1 &1667970473
 GameObject:
   m_ObjectHideFlags: 0
@@ -7775,6 +7775,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+  ChopperBody: {fileID: 1657404727}
 --- !u!82 &1854361300
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7859,7 +7860,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 16
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &1854361302
 MonoBehaviour:

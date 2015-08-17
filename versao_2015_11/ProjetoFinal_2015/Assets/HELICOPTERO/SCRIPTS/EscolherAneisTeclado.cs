@@ -63,7 +63,7 @@ public class EscolherAneisTeclado : MonoBehaviour
 		// como cada anel vale um ponto, este percorre a lista toda
 				Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].SetActive (true);
 				PosicaoYAneis = Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform.position.y;
-				SetasAuxiliares.transform.LookAt (Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform);
+				SetasAuxiliares.transform.LookAt (Aneis [ListaAneis [PassarAneis.Pontos]].transform);
 				
 				if (PassarAneis.Pontos == 8) {
 						Time.timeScale = 0.0f;

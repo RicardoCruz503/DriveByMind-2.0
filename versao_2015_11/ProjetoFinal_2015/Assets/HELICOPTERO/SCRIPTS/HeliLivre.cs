@@ -13,6 +13,8 @@ public class HeliLivre : MonoBehaviour
 		public Texture pauseGUI;
 		bool clickMenuReiniciar = false;
 		public GUIStyle TipoLetraFinal;
+		public GameObject ChopperBody;
+		private float tilt = 0;
 		int numeroColisao = 0; // Apenas faz a explosao quando bate a primeira vez em algo
 		
 		// Use this for initialization
@@ -36,21 +38,34 @@ public class HeliLivre : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-            this.transform.rotation = Quaternion.Euler(new Vector3(0.0f, transform.rotation.y, transform.rotation.y));
+            //this.transform.rotation = Quaternion.Euler(new Vector3(0.0f, transform.rotation.y, transform.rotation.y));
 				if (Colisao == false) {
 						if (!Input.GetKey (KeyCode.UpArrow) && !FrenteAndroid.FrnAndroid == true) {
 								if (this.gameObject.transform.position.y > EscolherAneisTeclado.PosicaoYAneis) {
 										this.transform.Translate (new Vector3 (0, -7 * Time.deltaTime, 0));
 								}
 						}
-						this.transform.Translate (new Vector3 (0, 0, 20 * Time.deltaTime));			
+						this.transform.Translate (new Vector3 (0, 0, 20 * Time.deltaTime));
 
+                       /* if (!Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
+                        {
+                            if (tilt > 0)
+                            {
+                                tilt = 0;
+                            }
+                            else if(tilt < 0)
+                            {
+                                tilt = 0.5f;
+                            }
+                        }*/
 
 						if (Input.GetKey (KeyCode.RightArrow) || DireitaAndroid.DirAndroid == true) {
-								//this.transform.Rotate (new Vector3 (0, 10 * Time.deltaTime, 0));	
+								this.transform.Rotate (new Vector3 (0, 10 * Time.deltaTime, 0));
+								tilt -= 0.5f*Time.deltaTime;
 						}
 						if (Input.GetKey (KeyCode.LeftArrow) || EsquerdaAndroid.EsqAndroid == true) {
-								//this.transform.Rotate (new Vector3 (0, -10 * Time.deltaTime, 0));
+								this.transform.Rotate (new Vector3 (0, -10 * Time.deltaTime, 0));
+                                tilt += 0.5f * Time.deltaTime;
 						}
 		
 						if (Input.GetKey (KeyCode.UpArrow) || FrenteAndroid.FrnAndroid == true) {
@@ -63,6 +78,7 @@ public class HeliLivre : MonoBehaviour
 				if (clickMenuReiniciar == true) {
 						Application.LoadLevel ("HelicopteroLivreTeclado");
 				}
+                ChopperBody.transform.Rotate(new Vector3(0, 0, tilt));
 		}
 		
 		void  OnCollisionEnter (Collision collision)
