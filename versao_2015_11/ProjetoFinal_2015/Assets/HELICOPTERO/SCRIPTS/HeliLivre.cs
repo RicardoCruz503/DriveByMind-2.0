@@ -16,6 +16,7 @@ public class HeliLivre : MonoBehaviour
 		public GameObject ChopperBody;
 		private float tilt = 3;
 		private float rotation = 0;
+		private int turnSpeed = 1;
 		int numeroColisao = 0; // Apenas faz a explosao quando bate a primeira vez em algo
 		
 		// Use this for initialization
@@ -43,19 +44,19 @@ public class HeliLivre : MonoBehaviour
 				if (Colisao == false) {
 						if (!Input.GetKey (KeyCode.UpArrow) && !FrenteAndroid.FrnAndroid == true) {
 								if (this.gameObject.transform.position.y > EscolherAneisTeclado.PosicaoYAneis) {
-										this.transform.Translate (new Vector3 (0, -7 * Time.deltaTime, 0));
+										this.transform.Translate (new Vector3 (0, -7 * turnSpeed * Time.deltaTime, 0));
 								}
 						}
 						this.transform.Translate (new Vector3 (0, 0, 20 * Time.deltaTime));
 						if (Input.GetKey (KeyCode.RightArrow) || DireitaAndroid.DirAndroid == true) {
-								this.transform.Rotate (new Vector3 (0, 15 * Time.deltaTime, 0));	
+								this.transform.Rotate (new Vector3 (0, 15 * turnSpeed * Time.deltaTime, 0));	
 								if(rotation*tilt < 50){
 									rotation += 0.5f;
 								}
 								
 						}
 						if (Input.GetKey (KeyCode.LeftArrow) || EsquerdaAndroid.EsqAndroid == true) {
-								this.transform.Rotate (new Vector3 (0, -15 * Time.deltaTime, 0));
+								this.transform.Rotate (new Vector3 (0, -15 * turnSpeed * Time.deltaTime, 0));
 								if(rotation*tilt > -50){
 									rotation -= 0.5f;
 								}
@@ -71,8 +72,18 @@ public class HeliLivre : MonoBehaviour
 						}
 		
 						if (Input.GetKey (KeyCode.UpArrow) || FrenteAndroid.FrnAndroid == true) {
-								this.transform.Translate (new Vector3 (0, 10 * Time.deltaTime, 0));
+								this.transform.Translate (new Vector3 (0, 10 * turnSpeed * Time.deltaTime, 0));
 						}
+						if (Input.GetKey (KeyCode.DownArrow) || FrenteAndroid.FrnAndroid == true) {
+							this.transform.Translate (new Vector3 (0, -5 * turnSpeed , 0));
+						}
+						if (Input.GetKey (KeyCode.Space)) {
+							this.transform.Translate (new Vector3 (0, 0 * Time.deltaTime, 10 ));
+							turnSpeed = 10;
+						} 
+						if(!Input.GetKey (KeyCode.Space)){
+							turnSpeed = 1;
+			}
 				} else if (Colisao == true && JogoAcabou != true) {
 						this.transform.Translate (new Vector3 (0, -10 * Time.deltaTime, 0));	
 				} 
@@ -113,7 +124,7 @@ public class HeliLivre : MonoBehaviour
 						GUI.Label (new Rect ((Screen.width / 8), (3 * Screen.height / 10), 2 * Screen.width / 4, Screen.height / 8), "Tempo : " + EscolherAneisTeclado.niceTime, TipoLetraFinal);
 						GUI.Label (new Rect ((5 * Screen.width / 8), (3 * Screen.height / 10), 2 * Screen.width / 4, Screen.height / 8), "Pontos : " + PassarAneis.Pontos, TipoLetraFinal);
 						if (GUI.Button (new Rect ((Screen.width / 4), (4 * Screen.height / 8), 2 * Screen.width / 4, Screen.height / 8), "Reiniciar")) {
-								clickMenuReiniciar = true;
+				Application.LoadLevel ("HelicopteroLivreTeclado");
 						}
 						if (GUI.Button (new Rect ((Screen.width / 4), (6 * Screen.height / 8), 2 * Screen.width / 4, Screen.height / 8), "Sair")) {
 								Application.LoadLevel ("MainMenu");
