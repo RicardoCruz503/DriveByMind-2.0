@@ -123,7 +123,6 @@
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\EscolherAneisTeclado.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\EscolherMoedas.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\HeliLivre.cs" />
-     <Compile Include="Assets\HELICOPTERO\SCRIPTS\HoverRotation.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\NavMeshDestinos.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\PassarAneis.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\TCPDestinos.cs" />

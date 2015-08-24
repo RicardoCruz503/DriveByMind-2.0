@@ -1,13 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HELICOPTERO\SCRIPTS\EscolherAneisTeclado.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HELICOPTERO\SCRIPTS\HeliLivre.cs">
     <Files>
-      <File FileName="Assets\HELICOPTERO\SCRIPTS\EscolherAneisTeclado.cs" Line="30" Column="4" />
-      <File FileName="Assets\HELICOPTERO\SCRIPTS\HeliLivre.cs" Line="127" Column="55" />
-      <File FileName="Assets\HELICOPTERO\SCRIPTS\HoverRotation.cs" Line="1" Column="1" />
-      <File FileName="Assets\HELICOPTERO\SCRIPTS\TCPHeliLivre.cs" Line="1" Column="1" />
-      <File FileName="Assets\HELICOPTERO\SCRIPTS\EscolherMoedas.cs" Line="27" Column="21" />
+      <File FileName="Assets\HELICOPTERO\SCRIPTS\HeliLivre.cs" Line="112" Column="6" />
       <File FileName="Assets\HELICOPTERO\SCRIPTS\PassarAneis.cs" Line="1" Column="1" />
+      <File FileName="Assets\HELICOPTERO\SCRIPTS\EscolherAneisTeclado.cs" Line="1" Column="1" />
+      <File FileName="Assets\HELICOPTERO\SCRIPTS\TCPHeliLivre.cs" Line="1" Column="1" />
+      <File FileName="Assets\HELICOPTERO\SCRIPTS\EscolherMoedas.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

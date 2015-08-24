@@ -102,15 +102,15 @@ public class HeliLivre : MonoBehaviour
 				Colisao = true;
 				explosao.SetActive (true);
 				if (numeroColisao == 0) {
-						explosao.GetComponent<AudioSource>().Play ();
+					explosao.GetComponent<AudioSource> ().Play ();
 				}
-				this.GetComponent<Rigidbody>().useGravity = true;
-				this.GetComponent<AudioSource>().Stop ();
+				this.GetComponent<Rigidbody> ().useGravity = true;
+				this.GetComponent<AudioSource> ().Stop ();
 				if (collision.gameObject.name.Contains ("floor") || collision.gameObject.name.Contains ("Terrain") || collision.gameObject.name.Contains ("Street") || numeroColisao == 4) {
-						JogoAcabou = true;
-						this.GetComponent<RodarHelices> ().enabled = false;
-				
-						Time.timeScale = 0.0f;
+					JogoAcabou = true;
+					this.GetComponent<RodarHelices> ().enabled = false;
+					
+					Time.timeScale = 0.0f;
 				}
 				numeroColisao++;
 		}
