@@ -117,6 +117,7 @@
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\Frente.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\Android\FrenteAndroid.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\ApanharMoedas.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\CollisionDetect.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\ConexaoTCP\Tcpheli.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\DestinosHelicoptero.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\EscolherAneis.cs" />

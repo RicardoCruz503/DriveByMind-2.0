@@ -3,13 +3,13 @@ using System.Collections;
 
 public class HeliLivre : MonoBehaviour
 {		
-		public GameObject explosao;
+		
 		public int Pontuacao = 0;
 		public string comando;				 // contem a tecla que o utilizador escolheu
 		public static float distancia;
 		public GameObject Teclado;
-		bool Colisao = false;
-		bool JogoAcabou = false;
+		public static bool Colisao = false;
+		public static bool JogoAcabou = false;
 		public Texture pauseGUI;
 		bool clickMenuReiniciar = false;
 		public GUIStyle TipoLetraFinal;
@@ -17,7 +17,7 @@ public class HeliLivre : MonoBehaviour
 		private float tilt = 3;
 		private float rotation = 0;
 		private int turnSpeed = 1;
-		int numeroColisao = 0; // Apenas faz a explosao quando bate a primeira vez em algo
+
 		
 		// Use this for initialization
 		void Start ()
@@ -30,7 +30,6 @@ public class HeliLivre : MonoBehaviour
 				} else {
 						Teclado.SetActive (false);
 				}
-		numeroColisao = 0;
 		clickMenuReiniciar = false;
 		JogoAcabou = false;
 		Colisao = false;
@@ -63,11 +62,11 @@ public class HeliLivre : MonoBehaviour
 						}
 						
 						if(!Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow)){
-								if(rotation > 0 && 0-rotation < -0.5){
-									rotation -= 0.5f;
+								if(rotation > -1.5 && 0-rotation < -0.5){
+									rotation -= 0.4f;
 								}
-								else if(rotation < 0 && 0-rotation > 0.5 ){
-									rotation +=0.5f;	
+								else if(rotation < 1.5 && 0-rotation > 0.5 ){
+									rotation +=0.4f;	
 								}
 						}
 		
@@ -95,24 +94,6 @@ public class HeliLivre : MonoBehaviour
 				Transform t = ChopperBody.transform;
 		ChopperBody.transform.localEulerAngles = new Vector3 (t.localEulerAngles.x, t.localEulerAngles.y, rotation * -tilt);
 				//ChopperBody.transform.rotation = Quaternion.Euler (t.rotation.x, t.rotation.y, rotation * -tilt)
-		}
-		
-		void  OnCollisionEnter (Collision collision)
-		{
-				Colisao = true;
-				explosao.SetActive (true);
-				if (numeroColisao == 0) {
-					explosao.GetComponent<AudioSource> ().Play ();
-				}
-				this.GetComponent<Rigidbody> ().useGravity = true;
-				this.GetComponent<AudioSource> ().Stop ();
-				if (collision.gameObject.name.Contains ("floor") || collision.gameObject.name.Contains ("Terrain") || collision.gameObject.name.Contains ("Street") || numeroColisao == 4) {
-					JogoAcabou = true;
-					this.GetComponent<RodarHelices> ().enabled = false;
-					
-					Time.timeScale = 0.0f;
-				}
-				numeroColisao++;
 		}
 
 		void OnGUI ()

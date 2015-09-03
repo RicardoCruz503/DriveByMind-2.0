@@ -1,28 +1,32 @@
 fileFormatVersion: 2
 guid: a53cf5449d11a15d1100a04b44295342
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    8900000: generatedCubemap
   serializedVersion: 2
   mipmaps:
-    mipMapMode: 0
+    mipMapMode: 1
     enableMipMap: 1
     linearTexture: 1
     correctGamma: 0
-    fadeOut: 0
+    fadeOut: 1
     borderMipMap: 0
-    mipMapFadeDistanceStart: 2
-    mipMapFadeDistanceEnd: 3
+    mipMapFadeDistanceStart: 9
+    mipMapFadeDistanceEnd: 10
   bumpmap:
     convertToNormalMap: 1
     externalNormalMap: 1
-    heightScale: .0164516103
-    normalMapFilter: 0
+    heightScale: .0270000007
+    normalMapFilter: 1
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+  cubemapConvolution: 1
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 512
+  textureFormat: -3
+  maxTextureSize: 2048
   textureSettings:
     filterMode: 1
     aniso: 3
@@ -30,6 +34,7 @@ TextureImporter:
     wrapMode: 0
   nPOTScale: 1
   lightmap: 0
+  rGBM: 0
   compressionQuality: 50
   spriteMode: 0
   spriteExtrude: 1
@@ -45,3 +50,5 @@ TextureImporter:
     sprites: []
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

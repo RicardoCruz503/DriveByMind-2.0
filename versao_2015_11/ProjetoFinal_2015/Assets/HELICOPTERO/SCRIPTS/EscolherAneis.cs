@@ -33,7 +33,7 @@ public class EscolherAneis : MonoBehaviour
 		contador = 0;
 		ValorRandom = 0;
 		clickMenuReiniciar = false;
-				while (contador<8) {
+				while (contador<10) {
 						ValorRandom = Random.Range (1, 16);
 						if (!ListaAneis.Contains (ValorRandom)) {
 								ListaAneis.Add (ValorRandom);
@@ -47,7 +47,7 @@ public class EscolherAneis : MonoBehaviour
 		}
 	
 		// Update is called once per frame
-		void Update ()
+		void FixedUpdate ()
 		{	
 				distancia = (int)Vector3.Distance (Helicoptero.transform.position, Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform.position);
 				DistanciaGUI.GetComponent<GUIText>().text = distancia + "m";
@@ -58,7 +58,7 @@ public class EscolherAneis : MonoBehaviour
 				PosicaoYAneis = Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform.position.y;
 				SetasAuxiliares.transform.LookAt (Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform);
 				
-				if (PassarAneis.Pontos == 8) {
+				if (PassarAneis.Pontos == 10) {
 						Time.timeScale = 0.0f;
 						JogoAcabou = true;
 				} else { //if ( Tcpheli.conectado == true)
