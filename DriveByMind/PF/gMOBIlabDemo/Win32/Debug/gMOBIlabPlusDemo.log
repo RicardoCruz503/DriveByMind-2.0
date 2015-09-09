@@ -1,15 +1,18 @@
-﻿Build started 09-09-2015 11:20:51.
+﻿Build started 09-09-2015 16:13:43.
      1>Project "E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\gMOBIlabPlusDemo.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Win32\Debug\gMOBIlabPlusDemo.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          All outputs are up-to-date.
-         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /Gd /TP /wd4290 /analyze- /errorReport:prompt gMOBIlabPlusDemo.cpp
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\\include" /I"E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\\mathgl-2.3.3-mingw.i686\include\mgl2" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc100.pdb" /Gd /TP /wd4290 /analyze- /errorReport:prompt gMOBIlabPlusDemo.cpp
          gMOBIlabPlusDemo.cpp
-     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(136): warning C4101: 'SocketReceiveThreadReturnValue' : unreferenced local variable
-     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(135): warning C4101: 'SocketReceiveThread' : unreferenced local variable
-     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(281): warning C4244: 'initializing' : conversion from 'float' to 'long', possible loss of data
-     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(293): warning C4244: '=' : conversion from 'float' to 'long', possible loss of data
+     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(138): warning C4101: 'SocketReceiveThreadReturnValue' : unreferenced local variable
+     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(137): warning C4101: 'SocketReceiveThread' : unreferenced local variable
+     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(283): warning C4244: 'initializing' : conversion from 'float' to 'long', possible loss of data
+     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(303): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(442): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(600): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\program files\gtec\gmobilabcapi\gmobilabdemo\gmobilabplusdemo.cpp(604): warning C4018: '<' : signed/unsigned mismatch
        Link:
          E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\Win32\Debug\gMOBIlabPlusDemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\\lib\x86" nafxcwd.lib libcmtd.lib SDL2.lib SDL2main.lib /NODEFAULTLIB:nafxcwd.lib /NODEFAULTLIB:libcmtd.lib /MANIFEST /ManifestFile:"Win32\Debug\gMOBIlabPlusDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\Win32\Debug\gMOBIlabPlusDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Program Files\gtec\gMOBIlabCAPI\gMOBIlabDemo\Win32\Debug\gMOBIlabPlusDemo.lib" /MACHINE:X86 Win32\Debug\gMOBIlabPlusDemo.obj
          Win32\Debug\stdafx.obj
@@ -24,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.04
+Time Elapsed 00:00:02.36

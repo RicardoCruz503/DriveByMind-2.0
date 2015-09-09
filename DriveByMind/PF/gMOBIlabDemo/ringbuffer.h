@@ -144,6 +144,10 @@ public:
 			_isEmpty = true;
 	}
 
+	T getElementAt(int index){
+		return _buffer[index];
+	}
+
 protected:
 	//the buffer array
 	T* _buffer;

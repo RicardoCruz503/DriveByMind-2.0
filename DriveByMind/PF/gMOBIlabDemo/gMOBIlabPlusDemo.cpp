@@ -31,7 +31,7 @@ using namespace std;
 
 //configuration
 //const long NUM_SECONDS_RUNNING = 2;		//the number of seconds that the application should acquire data (after this time elapsed the application will be stopped)
-unsigned int BUFFER_SIZE_SECONDS = 1;	//the size of the application buffer in seconds
+float BUFFER_SIZE_SECONDS = 1;	//the size of the application buffer in seconds
 unsigned int NUMBER_OF_CHANNELS = 8;	//the number of channels that should be acquired (must be less than or equal 8)
 unsigned int NUMBER_OF_SCANS = 8;		//the number of scans that should be received simultaneously per GT_GetData call
 
@@ -71,6 +71,7 @@ static int StartReceiveData(void *ptr);
 bool InitSocket();
 static int SendDataOverTime(void *ptr);
 void OnExit();
+double **bufferToBiArray();
 
 //global variables
 HANDLE _hDevice;
@@ -280,7 +281,7 @@ static int SendDataOverTime(void *ptr){
 
 	long startTime = clock();
 	long endTime = startTime + deltaSendTime * CLOCKS_PER_SEC;
-	string lel = "A";
+	/*string lel = "A";
 	while(running){
 		if(clock() >= endTime){
 			cout << "Sent" << lel.c_str() << endl;
@@ -293,6 +294,24 @@ static int SendDataOverTime(void *ptr){
 			}
 			endTime = clock() + deltaSendTime*CLOCKS_PER_SEC;
 		}
+	}*/
+	bool done = false;
+	while(running && !done)
+	if(clock() >= endTime){
+		double ** test = bufferToBiArray();
+		int capacityPerChannel = bufferCapacity / NUMBER_OF_CHANNELS;
+		for(int i =0; i < NUMBER_OF_CHANNELS; i++){
+			cout << endl;
+			cout  << "Channel " << i+1 << endl;
+			cout << "------------------------------------" << endl;
+			for(int j = 0; j < capacityPerChannel; j++){
+				cout << test[i][j] << " ";
+				if(j % 8 == 0)
+					cout << endl;
+			}
+			cout << endl;
+		}
+		done = true;
 	}
 	return 0;
 }
@@ -421,7 +440,7 @@ void StartAcquisition()
 
 	//initialize application data buffer to the specified number of seconds
 	_buffer.Initialize(BUFFER_SIZE_SECONDS * 256 * (NUMBER_OF_CHANNELS + _recordAllDigitalChannels));
-	bufferCapacity = _buffer._capacity;
+	bufferCapacity = _buffer.GetCapacity();
 	//reset event
 	_dataAcquisitionStopped.ResetEvent();
 
@@ -570,6 +589,25 @@ bool ReadData(short* destBuffer, int numberOfScans, int *errorCode, string *erro
 	*errorCode = 0;
 	*errorMessage = "No error occured.";
 	return true;
+}
+
+double **bufferToBiArray(){
+	cout << "chamado  bufferToBiArray";
+	
+	int bufferSizePerChannel = _buffer.GetCapacity()/NUMBER_OF_CHANNELS;
+	//double **output = (double **) malloc(BUFFER_SIZE_SECONDS * 256 * (NUMBER_OF_CHANNELS + _recordAllDigitalChannels));
+	double **output = (double**) malloc(NUMBER_OF_CHANNELS * sizeof(double*));
+	for(int i = 0; i < NUMBER_OF_CHANNELS; i++){
+		output[i] = (double *) malloc(bufferSizePerChannel * sizeof(double));
+	}
+
+	for(int i = 0; i< NUMBER_OF_CHANNELS; i++){
+		for(int j = 0; j < bufferSizePerChannel; j++){
+			output[i][j] = _buffer.getElementAt(j*NUMBER_OF_CHANNELS + i);
+		}
+	}
+
+	return output;
 }
 
 void OnExit(){
