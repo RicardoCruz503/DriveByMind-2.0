@@ -82,7 +82,7 @@ public class Tcpheli : MonoBehaviour
 						clientThread.Start (client);
 		
 						numeroConectado ++;
-						if (numeroConectado == 2) {
+						if (numeroConectado == 1) {
 								conectado = true;
 								numeroConectado = 0;
 								Debug.Log ("Conexao 2/2.. Pode Jogar");

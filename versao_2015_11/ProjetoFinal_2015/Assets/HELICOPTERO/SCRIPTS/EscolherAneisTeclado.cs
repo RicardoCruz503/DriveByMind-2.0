@@ -17,7 +17,6 @@ public class EscolherAneisTeclado : MonoBehaviour
 		float timer;
 		bool JogoAcabou = false;
 		public Texture pauseGUI;
-		bool clickMenuReiniciar = false;
 		public GameObject[] Aneis;
 		public GameObject SetasAuxiliares;
 		public static float PosicaoYAneis = 0;
@@ -29,13 +28,12 @@ public class EscolherAneisTeclado : MonoBehaviour
 		// Use this for initialization
 		void Start ()
 		{
-		clickMenuReiniciar = false;
 		JogoAcabou = false;
 		ValorRandom = 0;
 		contador = 0;
 
 			// Escolha aleatoria de oito numeros em dezasseis
-				while (contador<8) {
+				while (contador<10) {
 						ValorRandom = Random.Range (1, 16);
 						// verificar se o numero nao existe na lista
 						if (!ListaAneis.Contains (ValorRandom)) {
@@ -65,7 +63,7 @@ public class EscolherAneisTeclado : MonoBehaviour
 				PosicaoYAneis = Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform.position.y;
 				SetasAuxiliares.transform.LookAt (Aneis [ListaAneis [PassarAneis.Pontos]].transform);
 				
-				if (PassarAneis.Pontos == 8) {
+				if (PassarAneis.Pontos == 10) {
 						Time.timeScale = 0.0f;
 						JogoAcabou = true;
 				} else { //if ( Tcpheli.conectado == true)
@@ -75,9 +73,6 @@ public class EscolherAneisTeclado : MonoBehaviour
 						niceTime = string.Format ("{0:0}:{1:00}", minutes, seconds);
 
 				}
-			if (clickMenuReiniciar == true) {
-				Application.LoadLevel ("HelicopteroLivreTeclado");
-			}
 
 		}
 	
@@ -90,7 +85,7 @@ public class EscolherAneisTeclado : MonoBehaviour
 						GUI.Label (new Rect ((Screen.width / 4), (3 * Screen.height / 10), 2 * Screen.width / 4, Screen.height / 8), "Tempo : " + niceTime, TipoLetraFinal);
 			
 						if (GUI.Button (new Rect ((Screen.width / 4), (4 * Screen.height / 8), 2 * Screen.width / 4, Screen.height / 8), "Reiniciar")) {
-								clickMenuReiniciar = true;
+							Application.LoadLevel ("HelicopteroLivreTeclado");
 						}
 						if (GUI.Button (new Rect ((Screen.width / 4), (6 * Screen.height / 8), 2 * Screen.width / 4, Screen.height / 8), "Sair")) {
 								Application.LoadLevel ("MainMenu");

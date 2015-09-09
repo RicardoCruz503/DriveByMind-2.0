@@ -18,7 +18,10 @@ public class TCPHeliLivre : MonoBehaviour
 		int numeroColisao = 0; // Apenas faz a explosao quando bate a primeira vez em algo
 		public GameObject explosao;
 		float tempo = 0; // enviar comando ao MatLab 2s depois da conexao
-		
+		public GameObject ChopperBody;	
+		private float tilt = 3;
+		private float rotation = 0;
+		private int turnSpeed = 1;
 		// Use this for initialization
 		void Start ()
 		{
@@ -31,7 +34,7 @@ public class TCPHeliLivre : MonoBehaviour
 		}
 		
 		// Update is called once per frame
-		void Update ()
+		void FixedUpdate ()
 		{
 		if (Tcpheli.conectado == true && Colisao == false) {
 			tempo += Time.deltaTime;
@@ -55,12 +58,28 @@ public class TCPHeliLivre : MonoBehaviour
 
 				//if (Tcpheli.comand.Equals (MatLab_Det_Setas.DirValor.ToString())) {
 							if (Tcpheli.comand.Equals ("B")) {
-										this.transform.Rotate (new Vector3 (0, 10 * Time.deltaTime, 0));	
+										//this.transform.Rotate (new Vector3 (0, 10 * Time.deltaTime, 0));
+										this.transform.Rotate (new Vector3 (0, 15 * turnSpeed * Time.deltaTime, 0));	
+										if(rotation*tilt < 50){
+											rotation += 0.5f;
 								}
+							}
 				//if (Tcpheli.comand.Equals (MatLab_Det_Setas.EsqValor.ToString())) {
 							if (Tcpheli.comand.Equals ("A")) {
-										this.transform.Rotate (new Vector3 (0, -10 * Time.deltaTime, 0));
+										//this.transform.Rotate (new Vector3 (0, -10 * Time.deltaTime, 0));
+										this.transform.Rotate (new Vector3 (0, -15 * turnSpeed * Time.deltaTime, 0));
+										if(rotation*tilt > -50){
+											rotation -= 0.5f;
 								}
+							}
+					if(!Tcpheli.comand.Equals ("B") && !Tcpheli.comand.Equals ("A")){
+						if(rotation > -1.5 && 0-rotation < -0.5){
+							rotation -= 0.4f;
+						}
+						else if(rotation < 1.5 && 0-rotation > 0.5 ){
+							rotation +=0.4f;	
+						}
+					}
 						
 			//	if (Tcpheli.comand.Equals (MatLab_Det_Setas.FrenteValor.ToString())) {
 							if (Tcpheli.comand.Equals ("C")) {
@@ -91,9 +110,12 @@ public class TCPHeliLivre : MonoBehaviour
 				if (clickMenuReiniciar == true) {
 						Application.LoadLevel ("HelicopteroLivreTeclado");
 				}
+					
+					Transform t = ChopperBody.transform;
+					ChopperBody.transform.localEulerAngles = new Vector3 (t.localEulerAngles.x, t.localEulerAngles.y, rotation * -tilt);
 		}
 		
-		void  OnCollisionEnter (Collision collision)
+		/* void  OnCollisionEnter (Collision collision)
 		{
 				Colisao = true;
 				explosao.SetActive (true);
@@ -109,7 +131,7 @@ public class TCPHeliLivre : MonoBehaviour
 						Time.timeScale = 0.0f;
 				}
 				numeroColisao++;
-		}
+		} */
 
 		void OnGUI ()
 		{
