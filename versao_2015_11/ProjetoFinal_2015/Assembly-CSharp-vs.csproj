@@ -126,6 +126,7 @@
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\HeliLivre.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\NavMeshDestinos.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\PassarAneis.cs" />
+     <Compile Include="Assets\HELICOPTERO\SCRIPTS\RodarAnel.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\TCPDestinos.cs" />
      <Compile Include="Assets\HELICOPTERO\SCRIPTS\TCPHeliLivre.cs" />
      <Compile Include="Assets\HELICOPTERO\Unity3dx Free City01\scripts\MouseLook.cs" />

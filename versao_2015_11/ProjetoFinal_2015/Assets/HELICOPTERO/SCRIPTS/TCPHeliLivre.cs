@@ -25,6 +25,7 @@ public class TCPHeliLivre : MonoBehaviour
 		// Use this for initialization
 		void Start ()
 		{
+		Time.timeScale = 1.0f;
 		Pontuacao = 0;
 		clickMenuReiniciar = false;
 		EnviarMatLabModoJogo = true;
@@ -52,7 +53,7 @@ public class TCPHeliLivre : MonoBehaviour
 										this.transform.Translate (new Vector3 (0, -2 * Time.deltaTime, 0));
 								}
 					//	}
-						this.transform.Translate (new Vector3 (0, 0, 5 * Time.deltaTime));
+						this.transform.Translate (new Vector3 (0, 0, 10 * Time.deltaTime));
 				
 						// Se houver ligacao TCP com o jogo ele anda, senao fica parado
 

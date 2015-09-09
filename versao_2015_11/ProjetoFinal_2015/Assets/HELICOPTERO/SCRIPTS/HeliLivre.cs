@@ -88,6 +88,7 @@ public class HeliLivre : MonoBehaviour
 				} 
 			
 				if (clickMenuReiniciar == true) {
+						PassarAneis.Pontos = 0;
 						Application.LoadLevel ("HelicopteroLivreTeclado");
 				}
 

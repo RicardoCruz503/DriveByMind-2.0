@@ -22,40 +22,40 @@ public class CalibracaoPiscarSetas : MonoBehaviour {
 		ThreadBlink = new Thread (Blink);
 		ThreadBlink.Start ();
 
-		if (EstimulosEscolha.Seta1Usada == "SetaAmarela") {
+		if (EstimulosEscolha.Seta1Usada == 0) {
 			Seta1.GetComponent<SpriteRenderer> ().sprite = sprites [0];		
 		}
-		if (EstimulosEscolha.Seta2Usada == "SetaAmarela") {
+		if (EstimulosEscolha.Seta2Usada == 0) {
 			Seta2.GetComponent<SpriteRenderer> ().sprite = sprites [0];		
 		}
-		if (EstimulosEscolha.Seta1Usada == "SetaAzul") {
+		if (EstimulosEscolha.Seta1Usada == 1) {
 			Seta1.GetComponent<SpriteRenderer> ().sprite = sprites [1];		
 		}
-		if (EstimulosEscolha.Seta2Usada == "SetaAzul") {
+		if (EstimulosEscolha.Seta2Usada == 1) {
 			Seta2.GetComponent<SpriteRenderer> ().sprite = sprites [1];		
 		}
-		if (EstimulosEscolha.Seta1Usada == "SetaBranca") {
+		if (EstimulosEscolha.Seta1Usada == 2) {
 			Seta1.GetComponent<SpriteRenderer> ().sprite = sprites [2];		
 		}
-		if (EstimulosEscolha.Seta2Usada == "SetaBranca") {
+		if (EstimulosEscolha.Seta2Usada == 2) {
 			Seta2.GetComponent<SpriteRenderer> ().sprite = sprites [2];		
 		}
-		if (EstimulosEscolha.Seta1Usada == "SetaVerde") {
+		if (EstimulosEscolha.Seta1Usada == 3) {
 			Seta1.GetComponent<SpriteRenderer> ().sprite = sprites [3];		
 		}
-		if (EstimulosEscolha.Seta2Usada == "SetaVerde") {
+		if (EstimulosEscolha.Seta2Usada == 3) {
 			Seta2.GetComponent<SpriteRenderer> ().sprite = sprites [3];		
 		}
-		if (EstimulosEscolha.Seta1Usada == "SetaVermelha") {
+		if (EstimulosEscolha.Seta1Usada == 4) {
 			Seta1.GetComponent<SpriteRenderer> ().sprite = sprites [4];		
 		}
-		if (EstimulosEscolha.Seta2Usada == "SetaVermelha") {
+		if (EstimulosEscolha.Seta2Usada == 4) {
 			Seta2.GetComponent<SpriteRenderer> ().sprite = sprites [4];		
 		}
-		if (EstimulosEscolha.Seta1Usada == "SetaCinzenta") {
+		if (EstimulosEscolha.Seta1Usada == 5) {
 			Seta1.GetComponent<SpriteRenderer> ().sprite = sprites [5];		
 		}
-		if (EstimulosEscolha.Seta2Usada == "SetaCinzenta") {
+		if (EstimulosEscolha.Seta2Usada == 5) {
 			Seta2.GetComponent<SpriteRenderer> ().sprite = sprites [5];		
 		}
 	}

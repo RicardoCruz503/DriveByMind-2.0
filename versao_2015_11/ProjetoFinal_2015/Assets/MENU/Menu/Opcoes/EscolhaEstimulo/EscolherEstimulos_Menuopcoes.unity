@@ -134,8 +134,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c650c0496277b30408530eceb43970f8, type: 3}
   - {fileID: 2800000, guid: e5edf8801d1aeec4b9f47b29dd547a4b, type: 3}
   - {fileID: 2800000, guid: aa36df3fa74ff4246b41dbe39d63f540, type: 3}
-  - {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
-  - {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  - {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
+  - {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
 --- !u!131 &256835462
 GUITexture:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ GameObject:
   - 131: {fileID: 549310700}
   - 114: {fileID: 549310699}
   m_Layer: 0
-  m_Name: SetaVermelha
+  m_Name: Xadrez1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,8 +202,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c650c0496277b30408530eceb43970f8, type: 3}
   - {fileID: 2800000, guid: e5edf8801d1aeec4b9f47b29dd547a4b, type: 3}
   - {fileID: 2800000, guid: aa36df3fa74ff4246b41dbe39d63f540, type: 3}
-  - {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
-  - {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  - {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
+  - {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
 --- !u!131 &549310700
 GUITexture:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 549310697}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -324,8 +324,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c650c0496277b30408530eceb43970f8, type: 3}
   - {fileID: 2800000, guid: e5edf8801d1aeec4b9f47b29dd547a4b, type: 3}
   - {fileID: 2800000, guid: aa36df3fa74ff4246b41dbe39d63f540, type: 3}
-  - {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
-  - {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  - {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
+  - {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
 --- !u!131 &875958545
 GUITexture:
   m_ObjectHideFlags: 0
@@ -457,8 +457,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c650c0496277b30408530eceb43970f8, type: 3}
   - {fileID: 2800000, guid: e5edf8801d1aeec4b9f47b29dd547a4b, type: 3}
   - {fileID: 2800000, guid: aa36df3fa74ff4246b41dbe39d63f540, type: 3}
-  - {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
-  - {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  - {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
+  - {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
 --- !u!131 &1251883955
 GUITexture:
   m_ObjectHideFlags: 0
@@ -626,8 +626,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c650c0496277b30408530eceb43970f8, type: 3}
   - {fileID: 2800000, guid: e5edf8801d1aeec4b9f47b29dd547a4b, type: 3}
   - {fileID: 2800000, guid: aa36df3fa74ff4246b41dbe39d63f540, type: 3}
-  - {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
-  - {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  - {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
+  - {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
 --- !u!131 &1493746399
 GUITexture:
   m_ObjectHideFlags: 0
@@ -694,8 +694,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c650c0496277b30408530eceb43970f8, type: 3}
   - {fileID: 2800000, guid: e5edf8801d1aeec4b9f47b29dd547a4b, type: 3}
   - {fileID: 2800000, guid: aa36df3fa74ff4246b41dbe39d63f540, type: 3}
-  - {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
-  - {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  - {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
+  - {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
 --- !u!131 &1531877062
 GUITexture:
   m_ObjectHideFlags: 0
@@ -773,7 +773,7 @@ GameObject:
   - 131: {fileID: 1677928658}
   - 114: {fileID: 1677928657}
   m_Layer: 0
-  m_Name: SetaCinzenta
+  m_Name: Xadrez2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -797,8 +797,8 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c650c0496277b30408530eceb43970f8, type: 3}
   - {fileID: 2800000, guid: e5edf8801d1aeec4b9f47b29dd547a4b, type: 3}
   - {fileID: 2800000, guid: aa36df3fa74ff4246b41dbe39d63f540, type: 3}
-  - {fileID: 2800000, guid: 493f8cfde69b65f439d002bcd90f926f, type: 3}
-  - {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  - {fileID: 2800000, guid: 8587c654a2abf9d46bdca2374cd03c7e, type: 3}
+  - {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
 --- !u!131 &1677928658
 GUITexture:
   m_ObjectHideFlags: 0
@@ -806,7 +806,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1677928656}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 694226bd51bbaf645b831ba6dca0cc33, type: 3}
+  m_Texture: {fileID: 2800000, guid: 73169d2fb2a27db4f84b97061ca0f297, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -949,6 +949,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1992261444
 Transform:
   m_ObjectHideFlags: 0

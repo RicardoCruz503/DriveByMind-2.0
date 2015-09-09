@@ -63,9 +63,10 @@ public class EscolherAneisTeclado : MonoBehaviour
 				PosicaoYAneis = Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform.position.y;
 				SetasAuxiliares.transform.LookAt (Aneis [ListaAneis [PassarAneis.Pontos]].transform);
 				
-				if (PassarAneis.Pontos == 10) {
+				if (PassarAneis.Pontos == 9) {
 						Time.timeScale = 0.0f;
 						JogoAcabou = true;
+						PassarAneis.Pontos = 0;
 				} else { //if ( Tcpheli.conectado == true)
 						timer += Time.deltaTime;
 						int minutes = Mathf.FloorToInt (timer / 60F);

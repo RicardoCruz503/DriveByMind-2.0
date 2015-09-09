@@ -166,6 +166,6 @@ public class Tcpheli : MonoBehaviour
 				} catch (Exception e) {
 						Debug.Log (e.Message);
 				}
-				Debug.Log (clientThread.IsAlive); //true (must be false)
+//				Debug.Log (clientThread.IsAlive); //true (must be false)
 		}
 }
