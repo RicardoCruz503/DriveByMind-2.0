@@ -92,7 +92,7 @@ public class HeliLivre : MonoBehaviour
 				}
 
 				Transform t = ChopperBody.transform;
-		ChopperBody.transform.localEulerAngles = new Vector3 (t.localEulerAngles.x, t.localEulerAngles.y, rotation * -tilt);
+				ChopperBody.transform.localEulerAngles = new Vector3 (t.localEulerAngles.x, t.localEulerAngles.y, rotation * -tilt);
 				//ChopperBody.transform.rotation = Quaternion.Euler (t.rotation.x, t.rotation.y, rotation * -tilt)
 		}
 

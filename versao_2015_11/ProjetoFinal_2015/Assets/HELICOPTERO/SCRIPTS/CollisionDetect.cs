@@ -24,7 +24,7 @@ public class CollisionDetect : MonoBehaviour {
 		}
 		Helicoptero.GetComponent<Rigidbody> ().useGravity = true;
 		Helicoptero.GetComponent<AudioSource> ().Stop ();
-		if (collision.gameObject.name.Contains ("floor") || collision.gameObject.name.Contains ("Terrain") || collision.gameObject.name.Contains ("Street") || numeroColisao == 4) {
+		if (collision.gameObject.name.Contains ("floor") || collision.gameObject.name.Contains ("Terrain") || collision.gameObject.name.Contains ("Street") || collision.gameObject.name.Contains ("Soccer") || numeroColisao == 4) {
 			HeliLivre.JogoAcabou = true;
 			Helicoptero.GetComponent<RodarHelices> ().enabled = false;
 			

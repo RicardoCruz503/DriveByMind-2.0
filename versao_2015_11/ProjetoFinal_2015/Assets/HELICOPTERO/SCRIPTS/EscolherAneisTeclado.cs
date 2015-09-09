@@ -63,7 +63,7 @@ public class EscolherAneisTeclado : MonoBehaviour
 				PosicaoYAneis = Aneis [int.Parse (ListaAneis [PassarAneis.Pontos].ToString ())].transform.position.y;
 				SetasAuxiliares.transform.LookAt (Aneis [ListaAneis [PassarAneis.Pontos]].transform);
 				
-				if (PassarAneis.Pontos == 9) {
+				if (PassarAneis.Pontos == 10) {
 						Time.timeScale = 0.0f;
 						JogoAcabou = true;
 				} else { //if ( Tcpheli.conectado == true)
