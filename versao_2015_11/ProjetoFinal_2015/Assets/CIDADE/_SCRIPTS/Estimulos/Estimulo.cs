@@ -9,7 +9,7 @@ public class Estimulo : MonoBehaviour {
 	
 	public static List<Estimulo> myEstimulos = new List<Estimulo> ();
 	int delay;
-	bool state;
+	bool state = true;
 	public float frequencia;
 	private GUITexture Seta1;
 	private GUITexture Seta2;
@@ -21,6 +21,7 @@ public class Estimulo : MonoBehaviour {
 	public void setTextures(GUITexture Seta1, GUITexture Seta2){
 		this.Seta1 = Seta1;
 		this.Seta2 = Seta2;
+
 	}
 
 	public void Run()

@@ -70,6 +70,7 @@ public class EscolherAneis : MonoBehaviour
 				}
 			if (clickMenuReiniciar == true) {
 				Application.LoadLevel ("HelicopteroLivre");
+				PassarAneis.Pontos = 0;
 			}
 
 		}
